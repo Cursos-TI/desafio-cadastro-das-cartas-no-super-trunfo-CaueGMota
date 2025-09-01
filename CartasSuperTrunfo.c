@@ -1,7 +1,7 @@
 #include <stdio.h> 
 
 int main(){
-    char estado1;
+    char estado1;              
     char codigo1 [4];
     char cidade1 [30];
     int populacao1;
@@ -38,7 +38,7 @@ int main(){
 
     printf("Digite a quantidade de pontos turísticos na cidade: ");
     scanf(" %d", &numero1);
-
+//Solicita ao usuário os dados da primeira carta, lendo cada valor e armazenando nas variáveis correspondentes.
 
 
  printf("\n--Carta 02--\n");
@@ -46,10 +46,10 @@ int main(){
     scanf(" %c", &estado2);
 
     printf("Digite o Código da Carta (Ex: A01, H04): ");
-    scanf(" %3s", codigo2);
+    scanf(" %3s", codigo2); //limita a entrada do código a até 3 caracteres.
 
     printf("Digite o Nome da Cidade: ");
-    scanf(" %29[^\n]", cidade2);
+    scanf(" %29[^\n]", cidade2);  //lê até 29 caracteres até encontrar uma nova linha, permitindo nomes de cidade com espaços.
 
     printf("Digite o número de habitantes da cidade: ");
     scanf(" %d", &populacao2);
@@ -62,7 +62,7 @@ int main(){
 
     printf("Digite a quantidade de pontos turísticos na cidade: ");
     scanf(" %d", &numero2);
-
+//Solicita ao usuário os dados da segunda carta, lendo cada valor e armazenando nas variáveis correspondentes.
 
 
 
@@ -71,7 +71,7 @@ printf("\n=== Carta 1 ===\n");
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
     printf("População: %d Habitantes\n", populacao1);
-    printf("Área: %.2f km²\n", area1);
+    printf("Área: %.2f km²\n", area1); //A precisão %.2f limita os números de ponto flutuante a duas casas decimais.
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", numero1);
 
